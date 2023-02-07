@@ -14,21 +14,83 @@
   flex-wrap: wrap;
   height: 100vh;
 }
+
+.flex{
+    display: flex;
+}
 /*----------- 
      Nav 
 -------------*/
 .nav {
   background-color: black;
   width: 14.375rem;
-  height: 100%;
+  height: calc(100% - 5.625rem);
   color: #fff;
   padding: 1.25rem;
+  justify-content: space-between;
+  flex-direction: column;
 }
+
+.logobig{
+    width: 75%;
+    padding-bottom: 1.25rem;
+}
+
+.logosmall{
+    display: none;
+    width: 1.875rem;
+    margin: -0.625rem;
+    margin-bottom: .625rem;
+}
+
+.flex .fa-solid{
+    padding: 0 .625rem .9375rem 0;
+    font-size: 1.25rem;
+}
+
+.playlist h4{
+    padding: 1.25rem 0;
+}
+
+ul li{
+    list-style-type: none;
+    padding: .625rem 0;
+}
+
+.arrow, .omino{
+    padding-right: .625rem;
+}
+
+.nav-bottom .flex:first-child{
+    padding-bottom: .625rem;
+}
+
+.nav-bottom .flex:last-child{
+    padding-top: .625rem;
+}
+
+
 
 @media screen and (max-width:552px) {
     .nav{
         width: 3.125rem;
     }
+    .logosmall{
+        display: block;
+    }
+
+    .logobig{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .none{
+        display: none;
+    }
+
 }
 /*----------- 
     Main 

@@ -4,45 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify Web</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <!-- inizio nav -->
-        <nav class="nav">
-            <div>logo</div>
-            <div>
-                <div>casa</div>
-                <div>Home</div>
-            </div>
-            <div>
-                <div>casa</div>
-                <div>Home</div>
-            </div>
-            <div>
-                <div>casa</div>
-                <div>Home</div>
-            </div>
-            <section>
-                <div>Playlist</div>
+        <nav class="nav flex">
+            <div class="nav-top">
                 <div>
-                    <div>più</div>
-                    <div>Crea pleylist</div>
+                    <div class="logobig"><img src="img/logo.svg" alt="logo"></div>
+                    <div class="logosmall"><img src="img/logo-small.svg" alt="logosmall"></div>
                 </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                    </ul>
+                <div class="flex">
+                    <div><i class="fa-solid fa-house"></i></div>
+                    <div class="none">Home</div>
                 </div>
-            </section>
+                <div class="flex">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="none">Cerca</div>
+                </div>
+                <div class="flex">
+                    <div><i class="fa-solid fa-lines-leaning"></i></div>
+                    <div class="none">La tua Libreria</div>
+                </div>
+                <section class="playlist">
+                    <h4>Playlist</h4>
+                    <div class="flex">
+                        <div><i class="fa-regular fa-square-plus"></i></div>
+                        <div>Crea pleylist</div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="nav-bottom">
+                <div class="flex ">
+                    <div class="arrow"><i class="fa-regular fa-square-plus"></i></div>
+                    <div class="none">Installa app</div>
+                </div>
+                <hr>
+                <div class="flex">
+                    <div class="omino"><i class="fa-regular fa-circle-down"></i></div>
+                    <div class="none">Pinco Pallino</div>
+                </div>
+                
+            </div>
+
+
+            
 
         </nav>
         <!-- fine nav -->
