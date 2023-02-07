@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font -->
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome -->
     <title>Spotify Web</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
         <!-- inizio nav -->
@@ -18,20 +29,20 @@
                     <div class="logosmall"><img src="img/logo-small.svg" alt="logosmall"></div>
                 </div>
                 <div class="flex">
-                    <div><i class="fa-solid fa-house"></i></div>
+                    <div><i class="fa-solid fa-house fa"></i></div>
                     <div class="none">Home</div>
                 </div>
                 <div class="flex">
-                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div><i class="fa-solid fa-magnifying-glass fa"></i></div>
                     <div class="none name">Cerca</div>
                 </div>
                 <div class="flex">
-                    <div><i class="fa-solid fa-lines-leaning"></i></div>
+                    <div><i class="fa-solid fa-lines-leaning fa"></i></div>
                     <div class="none name">La tua Libreria</div>
                 </div>
                 <section class="playlist">
                     <h4>Playlist</h4>
-                    <div class="flex name">
+                    <div class="flex name crea">
                         <div><i class="fa-regular fa-square-plus"></i></div>
                         <div>Crea pleylist</div>
                     </div>
@@ -57,14 +68,14 @@
                 </div>
                 <hr>
                 <div class="flex">
-                    <div class="omino"><i class="fa-regular fa-circle-down"></i></div>
+                    <div class="omino"><i class="fa-regular fa-circle-user"></i></i></div>
                     <div class="none">Pinco Pallino</div>
                 </div>
-                
+
             </div>
 
 
-            
+
 
         </nav>
         <!-- fine nav -->
@@ -73,7 +84,30 @@
                 <button class="right-btn"><a href="#">Effettua l'upgrade</a></button>
             </div>
         </main>
-        <footer class="footer">Footer</footer>
+        <footer class="footer">
+            <div class="left">
+                <img src="img/sinister.jpeg" alt="Album cover">
+            </div>
+            <div class="center">
+                <div class="controls">
+                    <button class="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+                    <button class="backward"><i class="fa-solid fa-backward-step"></i></button>
+                    <button class="play"><i class="fa-regular fa-circle-play"></i></button>
+                    <button class="forward"><i class="fa-solid fa-forward-step"></i></button>
+                    <button class="repeat"><i class="fa-solid fa-rotate-right"></i></i></button>
+                </div>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="right flex">
+                <div class="volume-controls">
+                    <button class="bars"><i class="fa-solid fa-bars"></i></button>
+                    <button class="desktop"><i class="fa-solid fa-desktop"></i></button>
+                    <button class="volume"><i class="fa-solid fa-volume-high"></i></button>
+                </div>
+                <div class="volume-bar"></div>
+            </div>
+        </footer>
     </div>
 </body>
+
 </html>
