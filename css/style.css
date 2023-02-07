@@ -46,6 +46,7 @@
 .flex .fa-solid{
     padding: 0 .625rem .9375rem 0;
     font-size: 1.25rem;
+    color: #717171;
 }
 
 .playlist h4{
@@ -55,6 +56,7 @@
 ul li{
     list-style-type: none;
     padding: .625rem 0;
+    color: #717171;
 }
 
 .arrow, .omino{
@@ -63,13 +65,16 @@ ul li{
 
 .nav-bottom .flex:first-child{
     padding-bottom: .625rem;
+    color: #717171;
 }
 
 .nav-bottom .flex:last-child{
     padding-top: .625rem;
 }
 
-
+.name{
+    color: #717171;
+}
 
 @media screen and (max-width:552px) {
     .nav{
@@ -108,8 +113,22 @@ ul li{
   width: 100%;
   height: 5.625rem;
   padding: 1.25rem;
+  justify-content: right;
 }
 
+.right-btn {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    border-radius: 1.25rem;
+    float: left;
+    padding: .625rem 2.25rem;
+}
+
+.right-btn a{
+    text-decoration: none;
+    color: white;
+}
+  
   
 /*----------- 
     Footer 
