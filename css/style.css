@@ -1,12 +1,13 @@
 /*----------- 
     Reset 
 -------------*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
+
 /*----------- 
     Common 
 -------------*/
@@ -16,9 +17,10 @@
   height: 100vh;
 }
 
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
+
 /*----------- 
      Nav 
 -------------*/
@@ -32,85 +34,94 @@
   flex-direction: column;
 }
 
-.logobig{
-    width: 75%;
-    padding-bottom: 1.25rem;
+.logobig {
+  width: 75%;
+  padding-bottom: 1.25rem;
 }
 
-.logosmall{
-    display: none;
-    width: 1.875rem;
-    margin: -0.625rem;
-    margin-bottom: .625rem;
+.logosmall {
+  display: none;
+  width: 1.875rem;
+  margin: -0.625rem;
+  margin-bottom: .625rem;
 }
 
-.flex .fa{
-    padding: 0 .625rem .9375rem 0;
-    font-size: 1.25rem;
-    color: #717171;
+.flex .fa {
+  padding: 0 .625rem .9375rem 0;
+  font-size: 1.25rem;
+  color: #717171;
 }
 
-.playlist h4{
-    padding: 1.25rem 0;
+.playlist h4 {
+  padding: 1.25rem 0;
 }
 
-.crea{
-    padding: 1.25rem 0;
+.crea {
+  padding: 1.25rem 0;
 }
 
-ul li{
-    list-style-type: none;
-    padding: .625rem 0;
-    color: #717171;
+ul li {
+  list-style-type: none;
+  padding: .625rem 0;
+  color: #717171;
 }
 
-.arrow, .omino{
-    padding-right: .625rem;
+.arrow,
+.omino {
+  padding-right: .625rem;
 }
 
-.nav-bottom .flex:first-child{
-    padding-bottom: .625rem;
-    color: #717171;
+.nav-bottom .flex:first-child {
+  padding-bottom: .625rem;
+  color: #717171;
 }
 
-.nav-bottom .flex:last-child{
-    padding-top: .625rem;
+.nav-bottom .flex:last-child {
+  padding-top: .625rem;
 }
 
-.name{
-    color: #717171;
+.name {
+  color: #717171;
 }
 
 
 @media screen and (max-width:552px) {
-    .nav{
-        width: 3.125rem;
-    }
-    .logosmall{
-        display: block;
-    }
+  .nav {
+    width: 3.125rem;
+  }
 
-    .logobig{
-        display: none;
-    }
+  .logosmall {
+    display: block;
+  }
 
-    .playlist{
-        display: none;
-    }
+  .logobig {
+    display: none;
+  }
 
-    .none{
-        display: none;
-    }
+  .playlist {
+    display: none;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .flex .fa {
+    padding: 10px 10px 10px 0;
+  }
+
+  
 
 }
+
 /*----------- 
     Main 
 -------------*/
 .main {
   flex-grow: 1;
-  height: 100%;
+  height: calc(100% - 5.625rem);
+  width: calc(100% - 14.375rem);
   background-color: #141922;
-  position: relative;
   color: #fff;
 }
 
@@ -123,108 +134,179 @@ ul li{
 }
 
 .right-btn {
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid white;
-    border-radius: 1.25rem;
-    float: left;
-    padding: .625rem 2.25rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  border-radius: 1.25rem;
+  float: left;
+  padding: .625rem 2.25rem;
 }
 
-.right-btn a{
-    text-decoration: none;
-    color: white;
+.right-btn a {
+  text-decoration: none;
+  color: white;
 }
-  
-  
+
+
 /*----------- 
     Footer 
 -------------*/
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;  
-    background-color: #282828;
-    width: 100%;
-    height: 5.625rem;
-    padding: 1.25rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282828;
+  width: 100%;
+  height: 5.625rem;
+  padding: 1.25rem;
+  color: #fff;
 }
 
 .left {
-    width: 5rem;
-    text-align: center;
-  }
-  
-  .left img {
-    width: 3.75rem;
-    height: 3.75rem;
-  }
-  
-  .center {
-    flex: 1;
-    text-align: center;
-    margin: 0 1.25rem;
-  }
-  
-  .right {
-    width: 9.375rem;
-    text-align: center;
-  }
-  
-  .progress-bar {
-    width: 50%;
-    height: .3125rem;
-    background-color: #ddd;
-    border-radius: .3125rem;
-    margin: 0 auto;
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .play,
-  .repeat,
-  .shuffle,
-  .forward,
-  .backward {
-    width: 1.875rem;
-    height: 1.875rem;
-    border-radius: .9375rem;
-    background-color: #282828;
-    border: none;
-    cursor: pointer;
-    color: white;
-    padding: 0 1.25rem 2.5rem 1.25rem;
-    font-size: 1.25rem;
+  width: 25%;
+  justify-content: left;
+  align-items: center;
+}
+
+.left img {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.info-album {
+  padding-left: .625rem;
+  padding-right: 1.25rem;
+}
+
+.center {
+  flex: 1;
+  text-align: center;
+  margin: 0 1.25rem;
+}
+
+.right {
+  width: 25%;
+  text-align: center;
+  justify-content: right;
+}
+
+.progress-bar {
+  width: 75%;
+  height: .3125rem;
+  background-color: #ddd;
+  border-radius: .3125rem;
+  margin: auto 0;
+}
+
+.time-display {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 12px;
+  padding-bottom: 1.25rem;
+}
+
+.elapsed-time,
+.total-time {
+  padding: 0 1.25rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  padding-bottom: .625rem;
+}
+
+.heart {
+  padding-right: .9375rem;
+}
+
+.play {
+  padding: 0 1.25rem;
+}
+
+.play i {
+  font-size: 1.875rem;
+}
+
+.backward {
+  padding-left: .625rem;
+}
+
+.forward {
+  padding-right: .625rem;
+}
+
+.play,
+.repeat,
+.shuffle,
+.forward,
+.backward {
+  background-color: #282828;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.bars,
+.desktop,
+.volume {
+  background-color: #282828;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 0 1.25rem 0 0;
+}
+
+.heart,
+.folder {
+  background-color: #282828;
+  border: none;
+  cursor: pointer;
+  color: #717171;
+}
+
+.volume-bar {
+  min-width: 50%;
+  height: .3125rem;
+  background-color: #ddd;
+  border-radius: .3125rem;
+  margin: auto 0;
+}
+
+.volume-controls {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media screen and (max-width:640px) {
+
+  .select-info {
+    flex-wrap: wrap;
   }
 
   .bars,
   .desktop,
-  .volume{
-    border-radius: .9375rem;
-    background-color: #282828;
-    border: none;
-    cursor: pointer;
-    color: white;
-    padding: 0 1.25rem 0 0;
+  .volume {
+    padding: 0 .625rem 0 0;
+  }
+
+  .elapsed-time,
+  .total-time {
+    padding: 0 .625rem;
+  }
 
 }
-  
-  .volume-bar {
-    width: 50%;
-    height: .3125rem;
-    background-color: #ddd;
-    border-radius: .3125rem;
-    margin: 0 auto;
+
+@media screen and (max-width:552px) {
+
+  .info-album .flex {
+    flex-wrap: wrap;
   }
-  
-  .volume-controls {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+
+  .info-album {
+    padding-right: .625rem;
   }
+
+}

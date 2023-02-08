@@ -28,15 +28,15 @@
                     <div class="logobig"><img src="img/logo.svg" alt="logo"></div>
                     <div class="logosmall"><img src="img/logo-small.svg" alt="logosmall"></div>
                 </div>
-                <div class="flex">
+                <div class="flex hamburgher">
                     <div><i class="fa-solid fa-house fa"></i></div>
                     <div class="none">Home</div>
                 </div>
-                <div class="flex">
+                <div class="flex hamburgher">
                     <div><i class="fa-solid fa-magnifying-glass fa"></i></div>
                     <div class="none name">Cerca</div>
                 </div>
-                <div class="flex">
+                <div class="flex hamburgher">
                     <div><i class="fa-solid fa-lines-leaning fa"></i></div>
                     <div class="none name">La tua Libreria</div>
                 </div>
@@ -66,17 +66,12 @@
                     <div class="arrow"><i class="fa-regular fa-circle-down"></i></div>
                     <div class="none name">Installa app</div>
                 </div>
-                <hr>
+                <hr class="none">
                 <div class="flex">
                     <div class="omino"><i class="fa-regular fa-circle-user"></i></i></div>
                     <div class="none">Pinco Pallino</div>
                 </div>
-
             </div>
-
-
-
-
         </nav>
         <!-- fine nav -->
         <main class="main">
@@ -85,9 +80,21 @@
             </div>
         </main>
         <footer class="footer">
-            <div class="left">
+            <div class="left flex">
                 <img src="img/sinister.jpeg" alt="Album cover">
+                <div class="info-album">
+                    <h5>Sinister</h5>
+                    <div class="flex">
+                        <h6>Brano</h6>
+                        <h6>Nome</h6>
+                    </div>
+                </div>
+                <div class="flex select-info">
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
+                    <button class="folder"><i class="fa-regular fa-folder"></i></button>
+                </div>
             </div>
+
             <div class="center">
                 <div class="controls">
                     <button class="shuffle"><i class="fa-solid fa-shuffle"></i></button>
@@ -96,7 +103,11 @@
                     <button class="forward"><i class="fa-solid fa-forward-step"></i></button>
                     <button class="repeat"><i class="fa-solid fa-rotate-right"></i></i></button>
                 </div>
-                <div class="progress-bar"></div>
+                <div class="time-display">
+                    <span class="elapsed-time">0:45</span>
+                    <div class="progress-bar"></div>
+                    <span class="total-time">4:20</span>
+                </div>
             </div>
             <div class="right flex">
                 <div class="volume-controls">
