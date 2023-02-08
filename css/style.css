@@ -21,6 +21,9 @@
   display: flex;
 }
 
+img{
+  width: 100%;
+}
 /*----------- 
      Nav 
 -------------*/
@@ -106,16 +109,13 @@ ul li {
     display: none;
   }
 
-  .flex .fa {
-    padding: 10px 10px 10px 0;
+  .hamburger {
+    margin-left: -0.3125rem;
   }
-
-  
-
 }
 
 /*----------- 
-    Main 
+  Trasparent
 -------------*/
 .main {
   flex-grow: 1;
@@ -145,6 +145,33 @@ ul li {
   text-decoration: none;
   color: white;
 }
+
+/*----------- 
+    Main 
+-------------*/
+
+.container-list-main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: .9375rem;
+}
+
+.lista{
+  text-decoration: none;
+  color: #717171;
+  padding-right: 1.25rem;
+}
+
+.container-albums{
+  display: flex;
+  width: 100%;
+}
+
+.locandina{
+  padding: 20px;
+}
+
 
 
 /*----------- 
