@@ -26,8 +26,28 @@ img{
   width: 100%;
 }
 
+.link-style{
+  text-decoration: none;
+  color: #717171;
+}
+
 .main-big{
   padding: .9375rem;
+  padding-top: 5.625rem;
+}
+
+.link-style:hover{
+  color: #fff;
+}
+
+.lista:hover{
+  color: #fff;
+  border-bottom: .0625rem solid greenyellow;
+}
+
+.right-btn:hover{
+  scale: 1.1;
+  transition: 1.2s;
 }
 /*----------- 
      Nav 
@@ -57,12 +77,12 @@ img{
 .flex .fa {
   padding: 0 .625rem .9375rem 0;
   font-size: 1.25rem;
-  color: #717171;
 }
 
 .playlist h4 {
   padding: 1.25rem 0;
 }
+
 
 .crea {
   padding: 1.25rem 0;
@@ -75,11 +95,9 @@ img{
 }
 
 
-
-ul li {
+ul li{
   list-style-type: none;
   padding: .625rem 0;
-  color: #717171;
 }
 
 .arrow,
@@ -146,6 +164,9 @@ ul li {
   height: 5.625rem;
   padding: 1.25rem;
   justify-content: right;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .right-btn {
@@ -180,7 +201,7 @@ ul li {
   font-size: .625rem;
   text-decoration: none;
   color: #717171;
-  padding-right: 1.25rem;
+  margin: 0 .625rem;
 }
 
 .container-albums{
@@ -193,8 +214,26 @@ ul li {
   width: calc(100%/ 6);
 }
 
+
+
+.download{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.locandina:hover .download{
+  display: block;
+  font-size: 1.875rem;
+  color: #ddd;
+}
+
 .locandina{
   padding: 1.875rem .625rem 1.25rem 0 ;
+  position: relative;
+
 }
 
 .information{
@@ -236,6 +275,12 @@ ul li {
     flex-wrap: wrap;
     justify-content: center;
     width: calc(100%/ 2);
+  }
+}
+
+@media screen and (max-width:552px) {
+  .trasparent{
+    width: calc(100% - 3.125rem);
   }
 }
 
