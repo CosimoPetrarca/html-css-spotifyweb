@@ -15,6 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
+  overflow: hidden;
 }
 
 .flex {
@@ -23,6 +24,10 @@
 
 img{
   width: 100%;
+}
+
+.main-big{
+  padding: .9375rem;
 }
 /*----------- 
      Nav 
@@ -62,6 +67,14 @@ img{
 .crea {
   padding: 1.25rem 0;
 }
+
+.plus{
+  background-color: gray;
+  color: black;
+  padding:0.5rem;
+}
+
+
 
 ul li {
   list-style-type: none;
@@ -118,11 +131,13 @@ ul li {
   Trasparent
 -------------*/
 .main {
-  flex-grow: 1;
   height: calc(100% - 5.625rem);
   width: calc(100% - 14.375rem);
   background-color: #141922;
   color: #fff;
+  flex-grow: 1;
+  overflow: auto;
+  
 }
 
 .trasparent {
@@ -152,12 +167,17 @@ ul li {
 
 .container-list-main{
   width: 100%;
-  display: flex;
-  justify-content: center;
   padding: .9375rem;
 }
 
+.scelte{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .lista{
+  font-size: .625rem;
   text-decoration: none;
   color: #717171;
   padding-right: 1.25rem;
@@ -166,12 +186,48 @@ ul li {
 .container-albums{
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
+}
+
+.choise{
+  width: calc(100%/ 6);
 }
 
 .locandina{
-  padding: 20px;
+  padding: 1.875rem .625rem 1.25rem 0 ;
 }
 
+.information{
+  text-align: center;
+}
+
+.information h4{
+  padding-bottom: .625rem;
+}
+
+.information h6{
+  color: #717171;
+}
+
+@media screen and (max-width:878px) {
+
+  .choise{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100%/ 4);
+  }
+}
+
+@media screen and (max-width:640px) {
+
+  .choise{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100%/ 2);
+  }
+}
 
 
 /*----------- 
