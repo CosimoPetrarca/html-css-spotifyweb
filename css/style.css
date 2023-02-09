@@ -205,8 +205,18 @@ ul li {
   padding-bottom: .625rem;
 }
 
-.information h6{
+.information h6 ,.main-big h6{
   color: #717171;
+}
+
+.main-big h2{
+  padding-bottom: 1.25rem;
+  padding-top: 2.5rem;
+  
+}
+
+.cerchio{
+  border-radius: 50%;
 }
 
 @media screen and (max-width:878px) {
