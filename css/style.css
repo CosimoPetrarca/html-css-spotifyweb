@@ -80,6 +80,13 @@ img {
   font-size: 1.25rem;
 }
 
+.playlist{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: scroll;
+}
+
 .playlist h4 {
   padding: 1.25rem 0;
 }
@@ -353,6 +360,7 @@ ul li {
   width: 100%;
   font-size: 12px;
   padding-bottom: 1.25rem;
+  cursor: pointer;
 }
 
 .elapsed-time,
@@ -422,6 +430,7 @@ ul li {
   background-color: #ddd;
   border-radius: .3125rem;
   margin: auto 0;
+  cursor: pointer;
 }
 
 .volume-controls {
