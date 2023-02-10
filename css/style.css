@@ -162,8 +162,6 @@ ul li {
   color: #fff;
   flex-grow: 1;
   overflow: auto;
-  z-index: 10;
-
 }
 
 .trasparent {
@@ -175,6 +173,7 @@ ul li {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 10;
 }
 
 .right-btn {
