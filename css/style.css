@@ -332,6 +332,19 @@ ul li {
   background-color: #ddd;
   border-radius: .3125rem;
   margin: auto 0;
+  position: relative;
+}
+
+.progress-bar-light{
+  width: 75%;
+  height: .3125rem;
+  background-color: grey;
+  border-radius: .3125rem;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }
 
 .time-display {
